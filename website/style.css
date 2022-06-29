@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-image: url('./images/weather.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+}
+div.container {
+    margin: 20px auto 0;
+    padding: 5px;
+    width: 400px;
+}
+div.container:nth-child(1) {
+    margin-top: 100px;
+}
+input {
+    display: block;
+    border: none;
+    width: 90%;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 5px auto;
+    border-radius: 4px;
+    outline: none;
+    background-color: rgba(0,0,0,0.8);
+    color: #FFF;
+}
+textarea {
+    display: block;
+    margin: 5px auto;
+    padding: 5px 10px;
+    width: 90%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.4);
+    font-size: 16px;
+    color: #FFF;
+}
+button {
+    display: block;
+    width: 90%;
+    height: 35px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    margin: 5px auto;
+    color: #FFF;
+    font-weight: 900;
+    text-transform: capitalize;
+    cursor: pointer;
+    animation-name: test;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+button:hover {
+    animation-play-state: paused;
+}
+
+.holder > * {
+    width: 90%;
+    margin: 5px auto;
+    padding: 5px 10px;
+    border-top: 1px solid rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.5);
+    color: #FFF;
+}
+
+@keyframes test {
+    0% {
+        background-color: rgba(0,0,0,0.2);
+    } 50% {
+        background-color: rgba(0,0,0,0.8);
+    } 100% {
+        background-color: rgba(0,0,0,0.2);
+    }
+}
